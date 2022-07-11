@@ -5,9 +5,16 @@ background-image: url("https://images.unsplash.com/photo-1505740420928-5e560c06d
 background-size: cover;
 
 }
+#kor{
+    position: relative;
+    right: 150px;
+    font-size: 30px;
+    color: coral;
+}
 #koral{
     color: white;
     padding-left: 20px;
+    font-size: 50px;
 }
 #header{
     width: 100%;
@@ -44,7 +51,7 @@ nav ul li a{
     position: relative;
     right: 300px;
     transform: translatex(-50%);
-    text-decoration: underline;
+    
     text-decoration-color: coral;
 
     
@@ -52,12 +59,28 @@ nav ul li a{
 
 nav ul li a:hover{
 
-    color: white;
-    background-color: coral;
+    
+    color: coral;
+    text-decoration: underline;
 
 }
-
-
+#search{
+    position: relative;
+    right: 200px;
+}
+.cart{
+    position: relative;
+    right: 80px;
+    top: 20px;
+    
+}
+#navi{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 15px;
+    right: 100px;
+}
 .head1{
     margin-top: 100px;
     text-align: center;
@@ -66,12 +89,62 @@ nav ul li a:hover{
     color: white;
 
 }
+
+.prev{
+    position: absolute;
+    top: 40%;
+    font-size: 25px;
+    font-weight: bold;
+    color: antiquewhite;
+    left: 20px;
+}
+.next{
+    position: absolute;
+    top: 40%;
+    
+    font-size: 25px;
+    font-weight: bold;
+    color: antiquewhite;
+    right: 20px;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #303841;
+    transition: .5s;
+    z-index: 10;
+}
+.nav-btn:hover{
+    background-color: coral;
+}
 .head2{
     margin-top: 20px;
     text-align: center;
     font-size: 25px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: white;
+}
+.btns{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    
+    padding: 15px 30px 15px 30px;
+    text-decoration: none;
+    border: 1px solid white;
+    
+    position: relative;
+    top: 80px;
+    left: 600px;
+    background-color: transparent;
 }
 .btn {
     -webkit-border-radius: 28;
@@ -80,16 +153,19 @@ nav ul li a:hover{
     font-family: Arial;
     color: #ffffff;
     font-size: 14px;
-    background: goldenrod;
+    background: coral;
     padding: 15px 30px 15px 30px;
     text-decoration: none;
-    border: none;
+    border: 1px solid white;
     
     position: relative;
     top: 80px;
     left: 600px;
   }
-  
+  .btns:hover {
+    background: coral;
+    text-decoration: none;
+  }
   .btn:hover {
     background: coral;
     text-decoration: none;
@@ -116,7 +192,7 @@ nav ul li a:hover{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 80px;
     background-color: white;
     /* color: white; */
     text-align: center;
